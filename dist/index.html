@@ -12,22 +12,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Google Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Devicon Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
 
 </head>
 <body>
     <section id="hero-header">
-        <img src="../src/Assets/Frederik_Haas.jpg" alt="Portrait Frederik Haas" id="portrait">
+        <picture>
+            <source media="(max-width: 499px)" srcset="../src/Assets/Frederik_Haas_narrow.jpg" />
+            <source media="(min-width: 500px)" srcset="../src/Assets/Frederik_Haas.jpg" />
+            <img src="../src/Assets/Frederik_Haas.jpg" alt="Portrait Frederik Haas" id="portrait">
+          </picture>
         <div class="hero-content">
             <h1>Hi, Frederik here &#128075</h1>
             <h2>I am a fullstack web developer.</h2>
@@ -50,7 +46,7 @@
                     <a href='#my-projects'>Scroll down to view my projects &#128071</a></p>
                 </div>
                 <div class="skillset">
-                    <h1>Skillset</h1>
+                    <h1>My Skillset</h1>
                     <div class="tech-icon-container">
                         <div class="tech-icon">
                             <i class="devicon-html5-plain colored"></i>
@@ -135,7 +131,7 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img src="../src/Assets/fakestore.jpg" alt="Screenshot fakestore">
+                        <img src="../src/Assets/todo-list.jpg" alt="Screenshot todo-list">
                         <div class="project-description">
                             <div class="project-header-container">
                                 <h2>ToDo-List</h2>
@@ -156,6 +152,14 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="footer">
+        <h1>Let's get in touch!</h1>
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/frederik-haas-141663a5/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+            <a href="https://github.com/FreddyHaas" target="_blank"><i class="devicon-github-original"></i></a>
+            <a href="mailto:email@frederik-haas.de" target="_blank"><span class="material-symbols-outlined" id="mail-icon">mail</span></a>
         </div>
     </section>
 </body>

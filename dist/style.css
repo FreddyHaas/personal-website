@@ -11,23 +11,21 @@
 
 :root {
     --dark-blue: rgb(26, 26, 45);
-    --light-blue: rgb(188, 206, 252);
     --red: rgb(208, 61, 66);
+    --light-blue: rgb(101, 171, 236);
+    --dark-grey: rgb(73, 73, 73);
 }
 
 body {
     background-color: var(--dark-blue);
     color: white;
     margin: 40px;
+    position: relative;
 }
 
 #my-story h1, #my-projects h1 {
     font-size: 27px;
     height: 35px;
-}
-
-.skillset h1, #my-projects h1 {
-    margin-bottom: 20px;
 }
 
 /* Hero */
@@ -36,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 45px;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .hero-content {
@@ -86,7 +84,7 @@ body {
     border-radius: 4px;
     font-size: 24px;
     height: 34px;
-    max-width: 250px;  
+    width: 250px;
     visibility: hidden;
     /* Animation */ 
     animation-name: load-get-to-know-me-button;
@@ -138,7 +136,8 @@ body {
 }
 
 #portrait {
-    max-width: 400px;
+    max-width: min(400px, 80vw);
+    max-height: 50vh;
     border-radius: 8px;
 }
 
@@ -189,6 +188,10 @@ body {
 }
 
 /* Skillset */ 
+.skillset h1 {
+    margin-bottom: 20px;
+}
+
 .tech-icon-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40px, auto));
@@ -213,6 +216,11 @@ body {
 #my-projects {
     display: flex;
     flex-direction: column;
+    color: white;
+}
+
+#my-projects h1 {
+    margin-bottom: 40px;
 }
 
 .project {
@@ -221,7 +229,10 @@ body {
 }
 
 .project img {
-    max-width: 250px;
+    max-width: min(400px, 50vw);
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px 0.1px rgb(255, 255, 255);
+
 }
 
 .projects-container {
@@ -233,11 +244,13 @@ body {
 .project-description {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: min(40px, 3vh);
 }
 
 .project-header-container h2 {
     margin-bottom: 2px;
+    font-size: 20px;
 }
 
 .project-header-container p {
@@ -246,8 +259,8 @@ body {
 }
 
 .project-header-container a {
-    color: white;
     text-decoration: underline;
+    color: white;
 }
 
 .project-links-container {
@@ -276,8 +289,7 @@ body {
 }
 
  .project-tech-item {
-    border: 1px solid var(--light-blue);
-    color: var(--light-blue);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 8px;
     padding: 3px 15px;
     margin-right: 8px;
@@ -289,6 +301,95 @@ body {
     flex-basis: 100%;
     font-size: 16px;
     font-weight: 300;
-    color: var(--light-blue);
  }
 
+ /* Footer */
+ #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15vh;
+    min-height: 200px;
+    position: relative;
+    bottom: -40px;
+    left: -40px;
+    width: 100vw;
+    background: var(--dark-grey);
+ }
+
+ #footer h1 {
+    font-size: 30px;
+ }
+
+ .contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+ }
+
+ #footer a {
+    font-size: 40px;
+    color: white;
+    transition: transform 0.2s ease-in 0s;
+    display: flex;
+    align-items: center;
+ }
+
+ #mail-icon {
+    font-size: 40px;
+    color: white;
+ }
+
+ #footer a:hover {
+    transform: scale(1.2);
+ }
+
+
+ @media (max-width: 800px) {
+    /* Hero */
+    #hero-header {
+        flex-direction: column;
+    }
+
+    /* My story */
+    #my-story { 
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .story-text {
+        max-width: 100%;
+    }
+
+    .skillset {
+        margin-top: 30px;
+    }
+
+    .tech-icon-container {
+        width: 90vw;
+        gap: 25px;
+    }
+
+    /* My projects */
+
+    .project {
+        flex-direction: column;
+    }
+
+    .main-content {
+        gap: 60px;
+    }
+
+    #my-projects h1 {
+        margin-bottom: 20px;
+    }
+ }
+
+ @media (max-width: 400px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+ }
