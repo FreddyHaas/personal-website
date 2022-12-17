@@ -1,30 +1,42 @@
+/* Overarching */
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: content-box;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 :root {
     --dark-blue: rgb(26, 26, 45);
-    --light-blue: rgb(42, 94, 215);
+    --light-blue: rgb(188, 206, 252);
     --red: rgb(208, 61, 66);
 }
 
 body {
     background-color: var(--dark-blue);
     color: white;
+    margin: 40px;
 }
 
+#my-story h1, #my-projects h1 {
+    font-size: 27px;
+    height: 35px;
+}
 
-/* Hero section */
-.hero-header {
+.skillset h1, #my-projects h1 {
+    margin-bottom: 20px;
+}
+
+/* Hero */
+#hero-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     gap: 45px;
+    min-height: 100vh;
 }
 
 .hero-content {
@@ -72,14 +84,9 @@ body {
     margin-top: 40px;
     border: 1px solid var(--red);
     border-radius: 4px;
-    padding: 5px 0px;
-    color: var(--red);
     font-size: 24px;
+    height: 34px;
     max-width: 250px;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
     visibility: hidden;
     /* Animation */ 
     animation-name: load-get-to-know-me-button;
@@ -104,8 +111,22 @@ body {
 }
 
 .hero-content button:hover {
-    color: white;
     background-position: left;
+    color: white;
+}
+
+.hero-content button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--red);
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content button a:hover {
+    color: inherit;
 }
 
 .material-symbols-outlined {
@@ -120,4 +141,154 @@ body {
     max-width: 400px;
     border-radius: 8px;
 }
+
+/* Main */
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30vh;
+}
+
+/* My Story */
+#my-story { 
+    display: flex;
+    gap: 60px;
+}
+
+.story-text, .skillset {
+    margin-top: 10vh;
+}
+
+.story-text {
+    max-width: 500px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 1.4;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.story-text a {
+    color: var(--light-blue);
+    font-weight: 400;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+}
+
+.story-text a:hover {
+    transform: translate(0, +30%);
+}
+
+/* Skillset */ 
+.tech-icon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, auto));
+    gap: 60px;
+    width: min(30vw, 400px);
+}
+
+.tech-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.skillset p {
+    font-size: 12px;
+}
+
+/* Projects */
+#my-projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    display: flex;
+    gap: 25px;
+}
+
+.project img {
+    max-width: 250px;
+}
+
+.projects-container {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-header-container h2 {
+    margin-bottom: 2px;
+}
+
+.project-header-container p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.project-header-container a {
+    color: white;
+    text-decoration: underline;
+}
+
+.project-links-container {
+    display: flex;
+    gap: 20px;
+}
+
+.project-links-container a {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: var(--red);
+    font-weight: 500;
+    font-size: 18px;
+    transition: transform 0.2s ease-in 0s;
+}
+
+.project-links-container a:hover {
+    transform: translateY(-20%);
+}
+
+ .project-tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+ .project-tech-item {
+    border: 1px solid var(--light-blue);
+    color: var(--light-blue);
+    border-radius: 8px;
+    padding: 3px 15px;
+    margin-right: 8px;
+    font-weight: 400;
+    font-size: 16px;
+ }
+
+ .project-tech-container h3 {
+    flex-basis: 100%;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--light-blue);
+ }
 
