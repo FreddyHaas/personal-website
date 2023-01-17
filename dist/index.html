@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Devicon Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../src/Assets/favicon.png">
 
 
 </head>
@@ -42,8 +44,9 @@
                     <p>After working as a <b>management consultant for almost 4 years</b>, I decided it was time for a change: I had a strong desire to move from defining strategies to building products.</p>
                     <p>While I was working full-time I had already started doing a computer science course. I really enjoyed the problem solving aspects of it and the opportunity to build real-world applications.
                     <p>When the time came to decide on my next career move, it was easy to connect the dots. I wanted to transition into software development. </p>
-                    <p>Since then, I mainly focused on building <b>web apps using Javascript and React</b>.</p>
-                    <a href='#my-projects'>Scroll down to view my projects &#128071</a></p>
+                    <p>Since then, I mainly focused on building <b>web apps using Javascript</b>.</p>
+                    <a href='https://www.linkedin.com/in/frederikhaas/' target="_blank">View full CV &nbsp<i class="devicon-linkedin-plain"></i></a>
+                    <a href='#my-projects'>Scroll down to view my projects &#128071</a>
                 </div>
                 <div class="skillset">
                     <h1>My Skillset</h1>
@@ -69,6 +72,14 @@
                             <p>NODEJS</p>
                         </div>
                         <div class="tech-icon">
+                            <i class="devicon-mongodb-plain"></i>
+                            <p>MongoDB</p>
+                        </div>
+                        <div class="tech-icon">
+                            <i class="devicon-express-original"></i>
+                            <p>EXPRESS</p>
+                        </div>
+                        <div class="tech-icon">
                             <i class="devicon-jest-plain colored"></i>
                             <p>JEST</p>
                         </div>
@@ -91,50 +102,55 @@
                 <h1>My Projects</h1>
                 <div class="projects-container">
                     <div class="project">
-                        <img src="../src/Assets/fakestore.jpg" alt="Screenshot fakestore">
+                        <img src="../src/Assets/BlackBoard.jpg" alt="Screenshot BlackBoard">
+                        <div class="project-description">
+                            <div class="project-header-container">
+                                <h2>Blackboard ('Schwarzes Brett')</h2>
+                                <p>Digital board that allows authenticated users to post public messages</p>
+                            </div>
+                            <div class="project-tech-container">
+                                <h3>Built with:</h3>
+                                <div class="project-tech-item">NodeJS</div>
+                                <div class="project-tech-item">Express</div>
+                                <div class="project-tech-item">EJS</div>
+                                <div class="project-tech-item">MongoDB</div>
+                                <div class="project-tech-item">PassportJS</div>
+                            </div>
+                            <div class="project-links-container">
+                                <a href="https://blackboard-jxfw.onrender.com/" target="_blank"><span class="material-symbols-outlined">link
+                                    </span>Live Preview</a>
+                                <a href="https://github.com/FreddyHaas/message-board" target="_blank"><span class="material-symbols-outlined">link</span>View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="../src/Assets/PersonalBlog.jpg" alt="Screenshot PersonalBlog">
+                        <div class="project-description">
+                            <div class="project-header-container">
+                                <h2>Personal Blog</h2>
+                                <p>Blog platform with two separate frontends for blog readers and blog writers</p>
+                            </div>
+                            <div class="project-tech-container">
+                                <h3>Built with:</h3>
+                                <div class="project-tech-item">NodeJS</div>
+                                <div class="project-tech-item">Express</div>
+                                <div class="project-tech-item">MongoDB</div>
+                                <div class="project-tech-item">React</div>
+                            </div>
+                            <div class="project-links-container">
+                                <a href=https://personal-blog-visitor.web.app/ target="_blank"><span class="material-symbols-outlined">link
+                                    </span>Live Preview: readers</a>
+                                <a href=https://personal-blog-author.web.app/ target="_blank"><span class="material-symbols-outlined">link
+                                    </span>Live Preview: writers</a>
+                                <a href="https://github.com/FreddyHaas/personal-blog" target="_blank"><span class="material-symbols-outlined">link</span>View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="../src/Assets/Fakestore.jpg" alt="Screenshot fakestore">
                         <div class="project-description">
                             <div class="project-header-container">
                                 <h2>FakeShop</h2>
-                                <p>Online storefront with dummy items loaded from external API: <a href="https://fakestoreapi.com/" target="_blank">FakeStore API</a></p>
-                            </div>
-                            <div class="project-tech-container">
-                                <h3>Built with:</h3>
-                                <div class="project-tech-item">React</div>
-                                <div class="project-tech-item">styled-components</div>
-                                <div class="project-tech-item">React router</div>
-                            </div>
-                            <div class="project-links-container">
-                                <a href="https://freddyhaas.github.io/shopping-card/" target="_blank"><span class="material-symbols-outlined">link
-                                    </span>Live Preview</a>
-                                <a href="https://github.com/FreddyHaas/shopping-card" target="_blank"><span class="material-symbols-outlined">link</span>View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="../src/Assets/fakestore.jpg" alt="Screenshot fakestore">
-                        <div class="project-description">
-                            <div class="project-header-container">
-                                <h2>Tic-Tac-Toe</h2>
-                                <p>Online storefront with dummy items loaded from external API: <a href="https://fakestoreapi.com/" target="_blank">FakeStore API</a></p>
-                            </div>
-                            <div class="project-tech-container">
-                                <h3>Built with:</h3>
-                                <div class="project-tech-item">React</div>
-                                <div class="project-tech-item">styled-components</div>
-                                <div class="project-tech-item">React router</div>
-                            </div>
-                            <div class="project-links-container">
-                                <a href="https://freddyhaas.github.io/shopping-card/" target="_blank"><span class="material-symbols-outlined">link
-                                    </span>Live Preview</a>
-                                <a href="https://github.com/FreddyHaas/shopping-card" target="_blank"><span class="material-symbols-outlined">link</span>View Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img src="../src/Assets/todo-list.jpg" alt="Screenshot todo-list">
-                        <div class="project-description">
-                            <div class="project-header-container">
-                                <h2>ToDo-List</h2>
                                 <p>Online storefront with dummy items loaded from external API: <a href="https://fakestoreapi.com/" target="_blank">FakeStore API</a></p>
                             </div>
                             <div class="project-tech-container">
