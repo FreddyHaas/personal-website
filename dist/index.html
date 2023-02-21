@@ -15,19 +15,19 @@
     <!-- Devicon Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../src/Assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./Assets/favicon.png">
 
 
 </head>
 <body>
     <section id="hero-header">
         <picture>
-            <source media="(max-width: 499px)" srcset="../src/Assets/Frederik_Haas_narrow.jpg" />
-            <source media="(min-width: 500px)" srcset="../src/Assets/Frederik_Haas.jpg" />
-            <img src="../src/Assets/Frederik_Haas.jpg" alt="Portrait Frederik Haas" id="portrait">
+            <source media="(max-width: 499px)" srcset="./Assets/Frederik_Haas_narrow.jpg" />
+            <source media="(min-width: 500px)" srcset="./Assets/Frederik_Haas.jpg" />
+            <img src="./Assets/Frederik_Haas.jpg" alt="Portrait Frederik Haas" id="portrait">
           </picture>
         <div class="hero-content">
-            <h1>Hi, Frederik here &#128075</h1>
+            <h1>Hi, Frederik here &#128075</h1> 
             <h2>I am a fullstack web developer.</h2>
             <button>
                 <a href='#my-story'>
@@ -80,8 +80,8 @@
                             <p>EXPRESS</p>
                         </div>
                         <div class="tech-icon">
-                            <i class="devicon-jest-plain colored"></i>
-                            <p>JEST</p>
+                            <i class="devicon-nextjs-original-wordmark"></i>
+                            <p>NEXTJS</p>
                         </div>
                         <div class="tech-icon">
                             <i class="devicon-git-plain colored"></i>
@@ -102,7 +102,32 @@
                 <h1>My Projects</h1>
                 <div class="projects-container">
                     <div class="project">
-                        <img src="../src/Assets/BlackBoard.jpg" alt="Screenshot BlackBoard">
+                        <a href="https://car-cost-comparison.vercel.app/" target="_blank">
+                            <img src="./Assets/CarCostComparison.jpg" alt="Screenshot car cost comparison">
+                        </a>
+                        <div class="project-description">
+                            <div class="project-header-container">
+                                <h2>Car cost comparison</h2>
+                                <p>Comparison tool for car running costs with >5.500 models included (data was scrapped from ADAC website)</p>
+                            </div>
+                            <div class="project-tech-container">
+                                <h3>Built with:</h3>
+                                <div class="project-tech-item">TypeScript</div>
+                                <div class="project-tech-item">React</div>
+                                <div class="project-tech-item">Next.js</div>
+                                <div class="project-tech-item">Google Firebase</div>
+                            </div>
+                            <div class="project-links-container">
+                                <a href="https://car-cost-comparison.vercel.app/" target="_blank"><span class="material-symbols-outlined">link
+                                    </span>Live Preview</a>
+                                <a href="https://github.com/FreddyHaas/car-cost-comparison" target="_blank"><span class="material-symbols-outlined">link</span>View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <a href="https://blackboard-jxfw.onrender.com/" target="_blank">
+                            <img src="./Assets/BlackBoard.jpg" alt="Screenshot BlackBoard">
+                        </a>
                         <div class="project-description">
                             <div class="project-header-container">
                                 <h2>Blackboard ('Schwarzes Brett')</h2>
@@ -124,7 +149,9 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img src="../src/Assets/PersonalBlog.jpg" alt="Screenshot PersonalBlog">
+                        <a href="https://personal-blog-author.web.app/" target="_blank">
+                            <img src="./Assets/PersonalBlog.jpg" alt="Screenshot PersonalBlog">
+                        </a>
                         <div class="project-description">
                             <div class="project-header-container">
                                 <h2>Personal Blog</h2>
@@ -147,7 +174,9 @@
                         </div>
                     </div>
                     <div class="project">
-                        <img src="../src/Assets/Fakestore.jpg" alt="Screenshot fakestore">
+                        <a href="https://freddyhaas.github.io/shopping-card/" target="_blank">
+                            <img src="./Assets/Fakestore.jpg" alt="Screenshot fakestore">
+                        </a>
                         <div class="project-description">
                             <div class="project-header-container">
                                 <h2>FakeShop</h2>
